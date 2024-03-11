@@ -29,23 +29,23 @@ The API examples is given on the following the table:
 
 ### Examples
 
-- `/books`
+- **GET** `/books`
 
 	![GET](/images/get_example.png)
 
-- `/books`
+- **POST** `/books`
 
 	![POST](/images/post_example.png)
 
-- `/books/{bookId}`
+- **GET** `/books/{bookId}`
 
 	![GET](/images/get_by_id_example.png)
 
-- `/books/{bookId}`
+- **DELETE** `/books/{bookId}`
 
 	![DELETE](/images/delete_example.png)
 
-- `/books/{bookId}`
+- **PUT** `/books/{bookId}`
 
 	![PUT](/images/put_example.png)
 
