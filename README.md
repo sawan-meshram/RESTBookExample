@@ -2,7 +2,9 @@
 
 This project is to demonstrate REST API using Spring Boot.
 
-In this project, I have build API for methods such as `GET, POST, DELETE`, and `PUT`.
+In this project, I have build API for methods such as `GET, POST, DELETE`, and `PUT`. 
+
+Also, successfully demonstrate the `ResponseEntity` and `HttpStatus` classes to send response on client side.
 
 The API examples is given on the following the table:
 
