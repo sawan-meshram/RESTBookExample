@@ -43,8 +43,8 @@ public class BookController {
 		if(list.size() <= 0) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
-		return ResponseEntity.of(Optional.of(list));
-		
+//		return ResponseEntity.of(Optional.of(list));
+		return ResponseEntity.status(HttpStatus.CREATED).body(list);
 	}
 	/*
 	@GetMapping("/books/{id}")
@@ -70,6 +70,8 @@ public class BookController {
 	public ResponseEntity<Book> addBook(@RequestBody Book  book) {
 		Book b1 = null;
 		try {
+			System.out.println("For insert the book....");
+			System.out.println(book);
 			b1 = bookService.addBook(book);
 			return ResponseEntity.of(Optional.of(b1));
 		}catch (Exception e) {
