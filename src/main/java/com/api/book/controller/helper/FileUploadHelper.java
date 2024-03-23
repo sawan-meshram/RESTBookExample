@@ -44,7 +44,6 @@ public class FileUploadHelper {
 			//2nd option to upload the file
 			Files.copy(file.getInputStream(), Paths.get(UPLOAD_DIR+File.separator+file.getOriginalFilename()), 
 					StandardCopyOption.REPLACE_EXISTING);
-			
 			flag = true;
 
 			
